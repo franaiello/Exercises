@@ -109,6 +109,16 @@ public class Reverse {
         return Integer.parseInt(resultStr);
     }
 
+    public static Integer reverseNumbersImproved(Integer original) {
+        int rev = 0;while (original > 0) {
+            int rem = original % 10;
+            rev = rem + (rev * 10);
+            original = original / 10;
+        }
+
+        return rev;
+    }
+
     private static boolean isIntArrayNullOrEmpty(int[] original) {
         if (original == null || original.length == 0) {
             return true;

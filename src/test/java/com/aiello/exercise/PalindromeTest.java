@@ -13,7 +13,6 @@ public class PalindromeTest {
     public void isPalindrome_String() {
         String str = "alula";
         assertThat(Palindrome.isPalindrome(str)).isTrue();
-        assertThat(Palindrome2.isPalindrome(str)).isTrue();
     }
 
 
@@ -21,7 +20,6 @@ public class PalindromeTest {
     public void isPalindrome_StringCaseInsensitive() {
         String str = "moM";
         assertThat(Palindrome.isPalindrome(str)).isTrue();
-        assertThat(Palindrome2.isPalindrome(str)).isTrue();
     }
 
     @Test

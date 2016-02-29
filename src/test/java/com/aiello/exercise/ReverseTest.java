@@ -79,4 +79,11 @@ public class ReverseTest {
         Integer reverse = Reverse.reverseNumbers(original);
         assertThat(reverse).isEqualTo(4321);
     }
+
+    @Test
+    public void reverseNumbersImproved() {
+        Integer original = 1234;
+        Integer reverse = Reverse.reverseNumbersImproved(original);
+        assertThat(reverse).isEqualTo(4321);
+    }
 }

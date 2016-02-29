@@ -1,6 +1,8 @@
 package com.aiello.exercise;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class CombineArrays {
@@ -23,6 +25,39 @@ public class CombineArrays {
         }
 
         return list.toArray(new Integer[list.size()]);
+    }
+
+    /**
+     * Method accepts three integer arrays and combines them into one
+     * and then returns the array in reverse order
+     * @param one
+     * @param two
+     * @param three
+     * @param reverseOrder
+     * @return
+     */
+    public static Integer[] combineAndReverseIntegerArrays(int[] one, int[] two, int[] three, boolean reverseOrder) {
+
+        Integer[] results = new Integer[one.length + two.length + three.length];
+
+        int i=0;
+        for (int value : one) {
+            results[i++] = value;
+        }
+
+        for (int value : two) {
+            results[i++] = value;
+        }
+
+        for (int value : three) {
+            results[i++] = value;
+        }
+
+        if (reverseOrder) {
+            Arrays.sort(results, Collections.reverseOrder());
+        }
+
+        return results;
     }
 
     /**
