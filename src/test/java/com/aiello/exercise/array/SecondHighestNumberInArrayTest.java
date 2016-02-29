@@ -1,5 +1,6 @@
-package com.aiello.exercise;
+package com.aiello.exercise.array;
 
+import com.aiello.exercise.array.SecondHighestNumberInArray;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

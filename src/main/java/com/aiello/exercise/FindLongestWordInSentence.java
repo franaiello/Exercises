@@ -28,7 +28,7 @@ public class FindLongestWordInSentence {
     }
 
     /**
-     * Mehtod finds a specific character in a word and will
+     * Method finds a specific character in a word and will
      * return true if character exists within the word and
      * false otherwise.
      * @param word
