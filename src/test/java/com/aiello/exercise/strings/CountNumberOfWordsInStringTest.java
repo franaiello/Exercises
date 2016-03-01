@@ -1,4 +1,4 @@
-package com.aiello.exercise;
+package com.aiello.exercise.strings;
 
 import org.testng.annotations.Test;
 

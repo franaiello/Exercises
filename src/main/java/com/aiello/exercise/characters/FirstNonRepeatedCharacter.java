@@ -1,4 +1,4 @@
-package com.aiello.exercise;
+package com.aiello.exercise.characters;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

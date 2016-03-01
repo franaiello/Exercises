@@ -1,4 +1,4 @@
-package com.aiello.exercise;
+package com.aiello.exercise.strings;
 
 public class CountNumberOfWordsInString {
     public static int wordcount(String value) {

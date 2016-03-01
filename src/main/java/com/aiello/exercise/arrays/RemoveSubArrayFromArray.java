@@ -1,4 +1,4 @@
-package com.aiello.exercise.array;
+package com.aiello.exercise.arrays;
 
 public class RemoveSubArrayFromArray {
 

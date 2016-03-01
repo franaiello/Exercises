@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class HighestPossibleValue {
 
-    public static int getHighestPositiveValueOne(Integer[] array) {
+    public static int getHighestPositiveValueBySorting(Integer[] array) {
         int length = array.length;
         Arrays.sort(array);
         return array[length-1] * array[length-2] * array[length-3];
     }
 
-    public static int getHighestPositiveValueTwo(Integer[] inputlist) {
+    public static int getHighestPositiveValueWithoutSorting(Integer[] inputlist) {
         Integer[] mylist = {0, 0, 0, 0, 0};
 
         for (Integer candidate : inputlist) {
@@ -29,8 +29,6 @@ public class HighestPossibleValue {
             } else if (candidate <= mylist[3]) {
                 mylist[3] = candidate;
             }
-
-            //System.out.println(max((mylist[0] * mylist[1] * mylist[2]), (mylist[0] * mylist[3] * mylist[4])));
         }
 
         return mylist[0] * mylist[1] * mylist[2];

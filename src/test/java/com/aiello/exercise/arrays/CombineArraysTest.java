@@ -1,6 +1,5 @@
-package com.aiello.exercise.array;
+package com.aiello.exercise.arrays;
 
-import com.aiello.exercise.array.CombineArrays;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
