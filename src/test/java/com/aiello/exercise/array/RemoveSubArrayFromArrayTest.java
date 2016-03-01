@@ -5,10 +5,10 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class RemoveArrayFromAnotherTest {
+public class RemoveSubArrayFromArrayTest {
 
     @Test
-    public void removeArrayFromAnother() {
+    public void removeSubArrayFromArray() {
         String[] commonArray=new String[]{"common1","common2","common3","common4"};
         String[] notCommonArray=new String[]{"notcommon1","notcommon2","notcommon3"};
         String[] rareArray = new String[]{"rare1", "rare2"};
@@ -21,7 +21,7 @@ public class RemoveArrayFromAnotherTest {
         System.arraycopy(notCommonArray, 0, combinedArray, commonArray.length, notCommonArray.length);
         System.arraycopy(rareArray, 0, combinedArray, commonArray.length + notCommonArray.length, rareArray.length);
 
-        String[] result = RemoveArrayFromAnother.removeArray(combinedArray, notCommonArray);
+        String[] result = RemoveSubArrayFromArray.removeSubArray(combinedArray, notCommonArray);
         assertThat(result).containsExactly(new String[]{"common1","common2","common3","common4","rare1","rare2"});
     }
 }
