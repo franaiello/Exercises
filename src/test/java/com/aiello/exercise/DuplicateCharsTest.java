@@ -7,11 +7,19 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class DuplicateCharsTest {
 
     @Test
-    public void findDuplicate() {
+    public void findDuplicateUsingHashSet() {
         String unique = "ABCDEFFGHIJKLMNOKP";
 
-        String duplicate = DuplicateChars.findDuplicate(unique);
+        String duplicate = DuplicateChars.findDuplicateUsingHashSet(unique);
         assertThat(duplicate).isEqualTo("FK");
+    }
+
+    @Test
+    public void findDuplicateUsingHashMap() {
+        String unique = "ABCDEFFGHIJKLMNOKP";
+
+        String foo = DuplicateChars.findDuplicateUsingHashMap(unique);
+        assertThat(foo).isEqualTo("FK");
     }
 
     @Test

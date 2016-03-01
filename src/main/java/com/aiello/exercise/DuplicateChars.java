@@ -1,6 +1,8 @@
 package com.aiello.exercise;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class DuplicateChars {
@@ -10,7 +12,7 @@ public class DuplicateChars {
      * @param str
      * @return
      */
-    public static String findDuplicate(String str) {
+    public static String findDuplicateUsingHashSet(String str) {
         // this will house the duplicate characters that were duplicated
         StringBuilder duplicate= new StringBuilder();
         // the hashset will be used to store unique chars
@@ -84,5 +86,35 @@ public class DuplicateChars {
             char_set[val] = true;
         }
         return true;
+    }
+
+
+    /**
+     * Method uses a HashMap to store characters and their count
+     * @param str
+     * @return
+     */
+    public static String findDuplicateUsingHashMap(String str) {
+        // Key=character, Value=number of occurrences
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : str.toCharArray()) {
+            if (map.get(c) == null) {
+                map.put(c, 1);
+            } else {
+                int count = map.get(c);
+                map.put(c, ++count);
+            }
+        }
+
+        StringBuffer stringBuffer = new StringBuffer();
+
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            int count = entry.getValue();
+            if ( count > 1) {
+                stringBuffer.append(entry.getKey());
+            }
+        }
+
+        return stringBuffer.toString();
     }
 }
