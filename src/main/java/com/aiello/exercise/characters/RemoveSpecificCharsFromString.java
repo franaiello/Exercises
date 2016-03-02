@@ -1,4 +1,4 @@
-package com.aiello.exercise;
+package com.aiello.exercise.characters;
 
 public class RemoveSpecificCharsFromString {
     public static String removeSpecificCharsUsingRegEx(String originalStr, String charsToRemove) {

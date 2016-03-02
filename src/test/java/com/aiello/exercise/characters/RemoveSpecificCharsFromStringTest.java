@@ -1,5 +1,6 @@
-package com.aiello.exercise;
+package com.aiello.exercise.characters;
 
+import com.aiello.exercise.characters.RemoveSpecificCharsFromString;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
