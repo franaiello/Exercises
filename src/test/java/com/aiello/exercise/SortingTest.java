@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SortTest {
+public class SortingTest {
 
     @Test
     public void testAddThreeSorted() {
@@ -18,7 +18,7 @@ public class SortTest {
     @Test
     public void testAddThreeSortedTwo() {
         int[] unsorted={6, 4, 5};
-        int[] sorted = Sorting.sortWithDataStructure(unsorted);
+        int[] sorted = Sorting.sortWithAPI(unsorted);
         assertThat(sorted[0]).isEqualTo(4);
         assertThat(sorted[1]).isEqualTo(5);
         assertThat(sorted[2]).isEqualTo(6);

@@ -52,4 +52,82 @@ class DuplicateInteger {
 
         return sumArray - sumUniqueNumbers;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static List<Integer> foo(Integer[] array) {
+        List<Integer> duplicates = new ArrayList<>();
+
+        Map<Integer, Integer> map = new HashMap<>();
+        for (Integer value : array) {
+            // See if value exists in map
+            if (map.get(value) == null) {
+                map.put(value, 1);
+            } else {
+                duplicates.add(value);
+            }
+        }
+
+        return duplicates;
+    }
+
+
+
+
 }

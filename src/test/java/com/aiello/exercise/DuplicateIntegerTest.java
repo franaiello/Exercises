@@ -25,6 +25,9 @@ public class DuplicateIntegerTest {
 
         List<Integer> duplicates = DuplicateInteger.findDuplicate(array);
         assertThat(duplicates.size()).isEqualTo(1);
+
+        duplicates = DuplicateInteger.foo(array);
+        assertThat(duplicates.size()).isEqualTo(1);
     }
 
     @Test

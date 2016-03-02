@@ -24,7 +24,7 @@ public class Sorting {
         return unsorted;
     }
 
-    public static int[] sortWithDataStructure(int[] unsorted) {
+    public static int[] sortWithAPI(int[] unsorted) {
         Arrays.sort(unsorted);
         return unsorted;
     }
