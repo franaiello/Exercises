@@ -19,7 +19,7 @@ public class SplitArrayApart {
      */
     public static List<int[]> splitIntegerArray(int[] array, int splitInto) {
         int subArraySize = array.length / splitInto;
-        List<int[]> list = new ArrayList<int[]>();
+        List<int[]> list = new ArrayList<>();
 
         for (int i = 0; i <= array.length - 1; i = i + subArraySize) {
             list.add(Arrays.copyOfRange(array, i, i + subArraySize));
