@@ -21,6 +21,12 @@ public class RecursionTest {
         assertThat(result).isEqualTo(13);
     }
 
+    @Test(enabled=true)
+    public void fibonacciWithoutRecursionWithoutArray() {
+        int[] result = Recursion.fibonacci(7);
+        assertThat(result).isEqualTo(new Integer[]{0,1,1,2,3,5,8});
+    }
+
     @Test(enabled = true)
     public void fibonacciWithoutRecursion() {
         int result = Recursion.fibWithoutRecursion(7);

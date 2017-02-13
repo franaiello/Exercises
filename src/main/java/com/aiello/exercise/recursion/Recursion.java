@@ -54,6 +54,22 @@ public class Recursion {
         return array[n];
     }
 
+    public static int[] fibonacci(int n) {
+        int a = 0;
+        int b = 1;
+        int[] sequence = new int[n];
+
+        // Fill array with Fibonacci values.
+        for (int i = 0; i < n; i++) {
+            sequence[i] = a;
+
+            int temp = a;
+            a = b;
+            b = temp + b;
+        }
+
+        return sequence;
+    }
 
     public static void anagrams(String prefix, String word) {
         if(word.length() <= 1) {
